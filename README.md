@@ -23,6 +23,12 @@ In this simple implementation of a vision language model (VLM), there are 3 main
 3. A decoder only language model. This is the component that ultimately generates text. In my implementation I’ve deviated from what you see in LLaVA etc. a bit by incorporating the projection module to my decoder. Typically this is not observed, and you leave the architecture of the decoder (which is usually an already pretrained model) untouched.
 
 Everything is written from the ground up using pytorch. That includes the attention mechanism (both for the vision encoder and language decoder), patch creation for the vision transformer and everything else. Hope this is useful for anyone going through the repo and/ or the associated blog.
+
+seemore.py is the entirety of the implementation in a single file of pytorch.
+
+seemore_from_Scratch.ipynb walks through the intuition for the entire model architecture and how everything comes together. I recommend starting here.
+
+seemore_Concise.ipynb is the consolidated hackable implementation that I encourage you to hack, understand, improve and make your own
    
 **The code was entirely developed on Databricks using a single A100 for compute. If you're running this on Databricks, you can scale this on an arbitrarily large GPU cluster with no issues, on the cloud provider of your choice.**
 
