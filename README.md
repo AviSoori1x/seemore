@@ -24,7 +24,7 @@ In this simple implementation of a vision language model (VLM), there are 3 main
 
 3. A decoder only language model. This is the component that ultimately generates text. In my implementation I’ve deviated from what you see in LLaVA etc. a bit by incorporating the projection module to my decoder. Typically this is not observed, and you leave the architecture of the decoder (which is usually an already pretrained model) untouched.
 
-The scaled dot product attention implementation is borrowed from Andrej Kapathy's makemore. Also the decoder is an autoregressive character-level language model, just like in makemore. Now you see where the name 'seemore' came from :)
+The scaled dot product attention implementation is borrowed from Andrej Kapathy's makemore (https://github.com/karpathy/makemore). Also the decoder is an autoregressive character-level language model, just like in makemore. Now you see where the name 'seemore' came from :)
 
 Everything is written from the ground up using pytorch. That includes the attention mechanism (both for the vision encoder and language decoder), patch creation for the vision transformer and everything else. Hope this is useful for anyone going through the repo and/ or the associated blog.
 
