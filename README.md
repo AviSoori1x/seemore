@@ -9,8 +9,10 @@
     <img src="https://raw.githubusercontent.com/AviSoori1x/makeMoE/main/images/databricks.png" width="50px" height="auto">
 </a>
 <br>
+
 <span>Developed using Databricks with ❤️</span>
 
+#### Vision Language Model developed from scratch with Pytorch
 
 The input.txt with tinyshakespear and the base64 encoded string representations + corresponding descriptions are in the inputs.csv file in the images directory.
 
