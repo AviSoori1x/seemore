@@ -1,7 +1,7 @@
 # seemore
 
 <div align="center">
-    <img src="images/makemoelogo.png" width="500"/>
+    <img src="images/seemorelogo.png" width="500"/>
 </div>
 
 
