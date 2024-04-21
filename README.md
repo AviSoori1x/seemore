@@ -38,6 +38,8 @@ seemore.py is the entirety of the implementation in a single file of pytorch.
 seemore_from_Scratch.ipynb walks through the intuition for the entire model architecture and how everything comes together. I recommend starting here.
 
 seemore_Concise.ipynb is the consolidated hackable implementation that I encourage you to hack, understand, improve and make your own
+
+The modules subdirectory contains each of the components in their own .py file for convenience (should you choose to hack on pieces individually/ reuse for your own projects etc.)
    
 **The code was entirely developed on Databricks using a single A100 for compute. If you're running this on Databricks, you can scale this on an arbitrarily large GPU cluster with no issues, on the cloud provider of your choice.**
 
