@@ -14,8 +14,6 @@
 
 #### Vision Language Model from scratch in Pytorch
 
-The input.txt with tinyshakespear and the base64 encoded string representations + corresponding descriptions are in the inputs.csv file in the images directory.
-
 In this simple implementation of a vision language model (VLM), there are 3 main components. 
 
 1. Image Encoder to extract visual features from images. In this case I use a from scratch implementation of the original vision transformer used in CLIP. This is actually a popular choice in many modern VLMs. The one notable exception is Fuyu series of models from Adept, that passes the patchified images directly to the projection layer.
@@ -24,7 +22,7 @@ In this simple implementation of a vision language model (VLM), there are 3 main
 
 3. A decoder only language model. This is the component that ultimately generates text. In my implementation I’ve deviated from what you see in LLaVA etc. a bit by incorporating the projection module to my decoder. Typically this is not observed, and you leave the architecture of the decoder (which is usually an already pretrained model) untouched.
 
-The scaled dot product attention implementation is borrowed from Andrej Kapathy's makemore (https://github.com/karpathy/makemore). Also the decoder is an autoregressive character-level language model, just like in makemore. Now you see where the name 'seemore' came from :)
+The scaled dot product self attention implementation is borrowed from Andrej Kapathy's makemore (https://github.com/karpathy/makemore). Also the decoder is an autoregressive character-level language model, just like in makemore. Now you see where the name 'seemore' came from :)
 
 Everything is written from the ground up using pytorch. That includes the attention mechanism (both for the vision encoder and language decoder), patch creation for the vision transformer and everything else. Hope this is useful for anyone going through the repo and/ or the associated blog.
 
@@ -39,8 +37,10 @@ seemore_from_Scratch.ipynb walks through the intuition for the entire model arch
 
 seemore_Concise.ipynb is the consolidated hackable implementation that I encourage you to hack, understand, improve and make your own
 
-The modules subdirectory contains each of the components in their own .py file for convenience (should you choose to hack on pieces individually/ reuse for your own projects etc.)
-   
+The input.txt with tinyshakespear and the base64 encoded string representations + corresponding descriptions are in the inputs.csv file in the images directory.
+
+The modules subdirectory contains each of the components in their own .py file for convenience (should you choose to hack on pieces individually/ reuse for your own projects etc.)   
+
 **The code was entirely developed on Databricks using a single A100 for compute. If you're running this on Databricks, you can scale this on an arbitrarily large GPU cluster with no issues, on the cloud provider of your choice.**
 
 **I chose to use MLFlow (which comes pre-installed in Databricks. It's fully open source and you can pip install easily elsewhere) as I find it helpful to track and log all the metrics necessary. This is entirely optional but encouraged.**
