@@ -14,7 +14,8 @@
 
 #### Vision Language Model from scratch in Pytorch
 
-The Blog that walks through this: https://avisoori1x.github.io/2024/04/22/seemore-_Implement_a_Vision_Language_Model_from_Scratch.html, 
+The Blog that walks through this: https://avisoori1x.github.io/2024/04/22/seemore-_Implement_a_Vision_Language_Model_from_Scratch.html
+
 https://huggingface.co/blog/AviSoori1x/seemore-vision-language-model
 
 In this simple implementation of a vision language model (VLM), there are 3 main components. 
