@@ -18,6 +18,8 @@ The Blog that walks through this: https://avisoori1x.github.io/2024/04/22/seemor
 
 https://huggingface.co/blog/AviSoori1x/seemore-vision-language-model
 
+update: blog that walks through creating a sparse mixture of experts based vision language model: https://huggingface.co/blog/AviSoori1x/seemoe
+
 In this simple implementation of a vision language model (VLM), there are 3 main components. 
 
 1. Image Encoder to extract visual features from images. In this case I use a from scratch implementation of the original vision transformer used in CLIP. This is actually a popular choice in many modern VLMs. The one notable exception is Fuyu series of models from Adept, that passes the patchified images directly to the projection layer.
