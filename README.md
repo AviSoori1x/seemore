@@ -14,7 +14,8 @@
 
 #### Vision Language Model from scratch in Pytorch
 
-Update: blog that walks through creating a sparse mixture of experts based vision language model: https://huggingface.co/blog/AviSoori1x/seemoe
+#### Update: 
+blog that walks through creating a sparse mixture of experts based vision language model: https://huggingface.co/blog/AviSoori1x/seemoe
 You can think of this as a simplistic Version of Grok 1.5/ GPT-4 Vision from scratch, in one PyTorch file. The consolidated implementation is in seeMoE.py. The notebook is seeMoE_from_scratch.ipynb
 
 The Blog that walks through this: https://avisoori1x.github.io/2024/04/22/seemore-_Implement_a_Vision_Language_Model_from_Scratch.html
